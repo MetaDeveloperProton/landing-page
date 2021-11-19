@@ -1,1 +1,1 @@
-# landing-page
+This is MetaDeveloper's landing page project.
