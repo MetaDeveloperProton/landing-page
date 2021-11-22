@@ -108,12 +108,13 @@ body {
 .info-box {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .box {
     width: 125px;
     height: 125px;
+    border-radius: 10px;
 }
 
 .information-container {
@@ -155,6 +156,7 @@ body {
     align-items: center;
     width: 55em;
     height: 8em;
+    border-radius: 10px;
 }
 
 .footer {
@@ -162,5 +164,11 @@ body {
     justify-content: center;
     align-items: center;
     flex: 0.2;
+}
+
+button {
+    border-radius: 5px;
+    width: 7em;
+    height: 2em;
 }
 
