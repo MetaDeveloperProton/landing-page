@@ -1,33 +1,4 @@
-body,
-.header,
-.top,
-.logo,
-.header-links,
-.hero,
-.hero-action,
-.hero-title,
-.intro,
-button,
-img,
-.body,
-.information,
-.information-header,
-.information-container,
-.info-box,
-.box,
-.text,
-.quote-container,
-.quote-block,
-.quote,
-.quote-source,
-.action-block,
-.action-container,
-.action-text,
-.action-call,
-.instruction,
-footer {
-    border: 1px solid black;
-}
+/* Below are multi-element stylings */
 
 html,
 body {
@@ -37,13 +8,15 @@ body {
 .header,
 .action-block,
 .footer,
-button {
+button a {
     color: #F9FAF8;
 }
 
 .header-links,
-.text {
+.intro,
+.header-links a {
     color: #E5E7EB;
+    font-size: 18px;
 }
 
 .header,
@@ -54,7 +27,24 @@ button {
 .action-container,
 button {
     background-color: #3882F6;
+    border-style: solid;
 }
+
+button {
+    border-radius: 5px;
+    width: 7em;
+    height: 2em;
+}
+
+.header-links a {
+    text-decoration: none;
+}
+
+button a {
+    text-decoration: none;
+}
+
+/* Below are specific element applications */
 
 body {
     display: flex;
@@ -80,6 +70,10 @@ body {
     height: 200px;
 }
 
+.logo {
+    font-size: 24px;
+}
+
 .top {
     display: flex;
     justify-content: center;
@@ -95,6 +89,11 @@ body {
     flex: 1;
 }
 
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .hero-action {
     display: flex;
     flex-direction: column;
@@ -103,6 +102,10 @@ body {
     row-gap: 10px;
     height: 200px;
     width: 400px;
+}
+
+.hero-action button {
+    border-style: none;
 }
 
 .body {
@@ -122,6 +125,8 @@ body {
 .information-header {
     margin-top: 20px;
     color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
 }
 
 .information-container {
@@ -132,14 +137,23 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    width: 125px;
+    align-items: center;
 }
 
 .box {
     width: 125px;
     height: 125px;
+    border-style: solid;
     border-radius: 10px;
     border-color: #3882F6;
     border-width: 3px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .information-container {
@@ -165,8 +179,15 @@ body {
     row-gap: 2em;
 }
 
+.quote {
+    font-size: 36px;
+    font-style: italic;
+}
+
 .quote-source {
     align-self: flex-end;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .action-block {
@@ -185,17 +206,13 @@ body {
     border-radius: 10px;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0.2;
+.action-call {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-button {
-    border-radius: 5px;
-    width: 7em;
-    height: 2em;
+.instruction {
+    color: #E5E7EB;
 }
 
 .action-block button {
@@ -203,7 +220,14 @@ button {
     border-width: 1.5px;
 }
 
-.instruction {
-    color: #E5E7EB;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.2;
 }
+
+
+
+
 
