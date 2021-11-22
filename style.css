@@ -154,6 +154,8 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 6px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .text {
