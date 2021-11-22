@@ -46,6 +46,16 @@ button {
     color: #E5E7EB;
 }
 
+.header,
+.footer {
+    background-color: #1F2937;
+}
+
+.action-container,
+button {
+    background-color: #3882F6;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -128,6 +138,8 @@ body {
     width: 125px;
     height: 125px;
     border-radius: 10px;
+    border-color: #3882F6;
+    border-width: 3px;
 }
 
 .information-container {
@@ -140,6 +152,7 @@ body {
     align-items: center;
     justify-content: center;
     flex: 1;
+    background-color: #E5E7EB;
 }
 
 .quote-block {
@@ -183,5 +196,14 @@ button {
     border-radius: 5px;
     width: 7em;
     height: 2em;
+}
+
+.action-block button {
+    border-color: #F9FAF8;
+    border-width: 1.5px;
+}
+
+.instruction {
+    color: #E5E7EB;
 }
 
